@@ -1,0 +1,77 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.out
+coverage.html
+
+# Dependency directories
+vendor/
+
+# kcp container logs of the integration tests (tests/framework/kcp)
+.kcp-*/
+.test/
+
+# IDE and editor files
+.idea/
+.vscode/
+.claude/
+.cursor/
+.run/
+CLAUDE.local.md
+.gocache/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.envrc
+.env.local
+.env.*.local
+.secret
+.taskenv
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.kcp/
+
+# Debug files
+debug
+*.prof
+
+# Task context (if using claude code delegation)
+task-context/
+# Helm charts and tests (imported from helm-charts)
+oci/
+*.tgz
+# Chart dependencies are file:// references resolved at test/packaging time
+# (helm dependency update); nothing vendored is committed.
+charts/*/Chart.lock
+charts/*/charts/
+charts/common/test-chart/Chart.lock
+charts/common/test-chart/charts/
+*.webm
+*.pid
+tests/e2e/portal/test-results/
+tests/e2e/portal/node_modules/
+tests/e2e/portal/*.png
+*.kubeconfig
+ocm/.ocmconfig
+/runtime-artifacts
+docs/deployment/migration-0.3/kcp-exports

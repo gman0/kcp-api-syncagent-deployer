@@ -1,0 +1,6 @@
+apiVersion: v2
+name: kcp-api-syncagent-deployer
+description: Controller that reconciles kcp kubeconfig Secrets into Flux HelmReleases for the kcp api-syncagent.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
