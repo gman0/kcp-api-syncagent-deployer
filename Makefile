@@ -1,10 +1,10 @@
 # Image / chart coordinates.
 REGISTRY        ?= localhost:5001
-IMAGE_NAME      ?= kcp-api-syncagent-deployer
+IMAGE_NAME      ?= api-syncagent-deployer
 IMAGE_TAG       ?= latest
 IMAGE           ?= $(REGISTRY)/$(IMAGE_NAME):$(IMAGE_TAG)
 
-CHART_DIR       ?= charts/kcp-api-syncagent-deployer
+CHART_DIR       ?= charts/api-syncagent-deployer
 CHART_OUT       ?= bin/charts
 CHART_REPO      ?= oci://$(REGISTRY)/charts
 

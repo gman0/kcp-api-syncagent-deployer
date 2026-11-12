@@ -13,7 +13,7 @@ secretLabelSelector: ""
 replicas: 1
 
 image:
-  repository: ghcr.io/platform-mesh/kcp-api-syncagent-deployer
+  repository: ghcr.io/platform-mesh/api-syncagent-deployer
   tag: ""
   pullPolicy: IfNotPresent
 
