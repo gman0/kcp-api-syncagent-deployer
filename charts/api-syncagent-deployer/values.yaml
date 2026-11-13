@@ -1,6 +1,13 @@
 nameOverride: ""
 fullnameOverride: ""
 
+# Install the PublishedResource CRD from this chart. Enabled so users can
+# create PublishedResource templates before any kubeconfig Secret exists.
+# Set to false if the CRD is managed elsewhere (e.g. by a standalone
+# api-syncagent install on the same cluster).
+crds:
+  install: true
+
 # Required: name of the APIExportEndpointSlice this deployer binds every
 # managed api-syncagent HelmRelease to.
 apiExportEndpointSliceName: ""
